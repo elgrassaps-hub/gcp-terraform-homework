@@ -1,0 +1,216 @@
+[0m[1mrandom_id.suffix: Refreshing state... [id=bHPCIw][0m
+[0m[1mgoogle_storage_bucket.homework_bucket: Refreshing state... [id=project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223][0m
+[0m[1mgoogle_bigquery_dataset.homework_dataset: Refreshing state... [id=projects/project-534688f2-c3a9-4bff-95a/datasets/homework_dataset][0m
+[0m[1mgoogle_compute_instance.homework_vm: Refreshing state... [id=projects/project-534688f2-c3a9-4bff-95a/zones/europe-central2-a/instances/homework-vm][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # google_bigquery_dataset.homework_dataset[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_bigquery_dataset" "homework_dataset" {
+      [31m-[0m[0m creation_time                   = 1765741793250 [90m-> null[0m[0m
+      [31m-[0m[0m dataset_id                      = "homework_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m default_partition_expiration_ms = 0 [90m-> null[0m[0m
+      [31m-[0m[0m default_table_expiration_ms     = 0 [90m-> null[0m[0m
+      [31m-[0m[0m delete_contents_on_destroy      = true [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m etag                            = "hInIMUYuicBmceQnqCCmkw==" [90m-> null[0m[0m
+      [31m-[0m[0m id                              = "projects/project-534688f2-c3a9-4bff-95a/datasets/homework_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m is_case_insensitive             = false [90m-> null[0m[0m
+      [31m-[0m[0m labels                          = {
+          [31m-[0m[0m "purpose" = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m last_modified_time              = 1765741793250 [90m-> null[0m[0m
+      [31m-[0m[0m location                        = "EU" [90m-> null[0m[0m
+      [31m-[0m[0m max_time_travel_hours           = "168" [90m-> null[0m[0m
+      [31m-[0m[0m project                         = "project-534688f2-c3a9-4bff-95a" [90m-> null[0m[0m
+      [31m-[0m[0m resource_tags                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/project-534688f2-c3a9-4bff-95a/datasets/homework_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m user_by_email = "elgrassa.ps@gmail.com" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectOwners" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "READER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectReaders" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "WRITER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectWriters" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # google_compute_instance.homework_vm[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_compute_instance" "homework_vm" {
+      [31m-[0m[0m can_ip_forward       = false [90m-> null[0m[0m
+      [31m-[0m[0m cpu_platform         = "Intel Broadwell" [90m-> null[0m[0m
+      [31m-[0m[0m creation_timestamp   = "2025-12-14T11:49:59.398-08:00" [90m-> null[0m[0m
+      [31m-[0m[0m current_status       = "RUNNING" [90m-> null[0m[0m
+      [31m-[0m[0m deletion_protection  = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_display       = false [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "projects/project-534688f2-c3a9-4bff-95a/zones/europe-central2-a/instances/homework-vm" [90m-> null[0m[0m
+      [31m-[0m[0m instance_id          = "4035480454685698572" [90m-> null[0m[0m
+      [31m-[0m[0m label_fingerprint    = "MMZ8jSOqyvA=" [90m-> null[0m[0m
+      [31m-[0m[0m labels               = {
+          [31m-[0m[0m "purpose" = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m machine_type         = "e2-micro" [90m-> null[0m[0m
+      [31m-[0m[0m metadata             = {} [90m-> null[0m[0m
+      [31m-[0m[0m metadata_fingerprint = "gmNWUXuP1l4=" [90m-> null[0m[0m
+      [31m-[0m[0m name                 = "homework-vm" [90m-> null[0m[0m
+      [31m-[0m[0m project              = "project-534688f2-c3a9-4bff-95a" [90m-> null[0m[0m
+      [31m-[0m[0m resource_policies    = [] [90m-> null[0m[0m
+      [31m-[0m[0m self_link            = "https://www.googleapis.com/compute/v1/projects/project-534688f2-c3a9-4bff-95a/zones/europe-central2-a/instances/homework-vm" [90m-> null[0m[0m
+      [31m-[0m[0m tags                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m tags_fingerprint     = "42WmSpB8rSM=" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m zone                 = "europe-central2-a" [90m-> null[0m[0m
+
+      [31m-[0m[0m boot_disk {
+          [31m-[0m[0m auto_delete       = true [90m-> null[0m[0m
+          [31m-[0m[0m device_name       = "persistent-disk-0" [90m-> null[0m[0m
+          [31m-[0m[0m force_attach      = false [90m-> null[0m[0m
+          [31m-[0m[0m guest_os_features = [
+              [31m-[0m[0m "UEFI_COMPATIBLE",
+              [31m-[0m[0m "VIRTIO_SCSI_MULTIQUEUE",
+              [31m-[0m[0m "GVNIC",
+              [31m-[0m[0m "SEV_CAPABLE",
+              [31m-[0m[0m "SEV_LIVE_MIGRATABLE_V2",
+            ] [90m-> null[0m[0m
+          [31m-[0m[0m mode              = "READ_WRITE" [90m-> null[0m[0m
+          [31m-[0m[0m source            = "https://www.googleapis.com/compute/v1/projects/project-534688f2-c3a9-4bff-95a/zones/europe-central2-a/disks/homework-vm" [90m-> null[0m[0m
+
+          [31m-[0m[0m initialize_params {
+              [31m-[0m[0m architecture                = "X86_64" [90m-> null[0m[0m
+              [31m-[0m[0m enable_confidential_compute = false [90m-> null[0m[0m
+              [31m-[0m[0m image                       = "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-12-bookworm-v20251209" [90m-> null[0m[0m
+              [31m-[0m[0m labels                      = {} [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_iops            = 0 [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_throughput      = 0 [90m-> null[0m[0m
+              [31m-[0m[0m resource_manager_tags       = {} [90m-> null[0m[0m
+              [31m-[0m[0m resource_policies           = [] [90m-> null[0m[0m
+              [31m-[0m[0m size                        = 10 [90m-> null[0m[0m
+              [31m-[0m[0m type                        = "pd-standard" [90m-> null[0m[0m
+            }
+        }
+
+      [31m-[0m[0m network_interface {
+          [31m-[0m[0m internal_ipv6_prefix_length = 0 [90m-> null[0m[0m
+          [31m-[0m[0m name                        = "nic0" [90m-> null[0m[0m
+          [31m-[0m[0m network                     = "https://www.googleapis.com/compute/v1/projects/project-534688f2-c3a9-4bff-95a/global/networks/default" [90m-> null[0m[0m
+          [31m-[0m[0m network_ip                  = "10.186.0.2" [90m-> null[0m[0m
+          [31m-[0m[0m queue_count                 = 0 [90m-> null[0m[0m
+          [31m-[0m[0m stack_type                  = "IPV4_ONLY" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork                  = "https://www.googleapis.com/compute/v1/projects/project-534688f2-c3a9-4bff-95a/regions/europe-central2/subnetworks/default" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork_project          = "project-534688f2-c3a9-4bff-95a" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m scheduling {
+          [31m-[0m[0m automatic_restart   = true [90m-> null[0m[0m
+          [31m-[0m[0m availability_domain = 0 [90m-> null[0m[0m
+          [31m-[0m[0m min_node_cpus       = 0 [90m-> null[0m[0m
+          [31m-[0m[0m on_host_maintenance = "MIGRATE" [90m-> null[0m[0m
+          [31m-[0m[0m preemptible         = false [90m-> null[0m[0m
+          [31m-[0m[0m provisioning_model  = "STANDARD" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m shielded_instance_config {
+          [31m-[0m[0m enable_integrity_monitoring = true [90m-> null[0m[0m
+          [31m-[0m[0m enable_secure_boot          = false [90m-> null[0m[0m
+          [31m-[0m[0m enable_vtpm                 = true [90m-> null[0m[0m
+        }
+    }
+
+[1m  # google_storage_bucket.homework_bucket[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_storage_bucket" "homework_bucket" {
+      [31m-[0m[0m default_event_based_hold    = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_object_retention     = false [90m-> null[0m[0m
+      [31m-[0m[0m force_destroy               = true [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223" [90m-> null[0m[0m
+      [31m-[0m[0m labels                      = {
+          [31m-[0m[0m "purpose" = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m location                    = "EUROPE-CENTRAL2" [90m-> null[0m[0m
+      [31m-[0m[0m name                        = "project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223" [90m-> null[0m[0m
+      [31m-[0m[0m project                     = "project-534688f2-c3a9-4bff-95a" [90m-> null[0m[0m
+      [31m-[0m[0m project_number              = 665571830818 [90m-> null[0m[0m
+      [31m-[0m[0m public_access_prevention    = "inherited" [90m-> null[0m[0m
+      [31m-[0m[0m requester_pays              = false [90m-> null[0m[0m
+      [31m-[0m[0m self_link                   = "https://www.googleapis.com/storage/v1/b/project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223" [90m-> null[0m[0m
+      [31m-[0m[0m storage_class               = "STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+          [31m-[0m[0m "purpose"                    = "homework"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m time_created                = "2025-12-14T19:49:53.697Z" [90m-> null[0m[0m
+      [31m-[0m[0m uniform_bucket_level_access = true [90m-> null[0m[0m
+      [31m-[0m[0m updated                     = "2025-12-14T19:49:53.697Z" [90m-> null[0m[0m
+      [31m-[0m[0m url                         = "gs://project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223" [90m-> null[0m[0m
+
+      [31m-[0m[0m hierarchical_namespace {
+          [31m-[0m[0m enabled = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m soft_delete_policy {
+          [31m-[0m[0m effective_time             = "2025-12-14T19:49:53.697Z" [90m-> null[0m[0m
+          [31m-[0m[0m retention_duration_seconds = 604800 [90m-> null[0m[0m
+        }
+    }
+
+[1m  # random_id.suffix[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "random_id" "suffix" {
+      [31m-[0m[0m b64_std     = "bHPCIw==" [90m-> null[0m[0m
+      [31m-[0m[0m b64_url     = "bHPCIw" [90m-> null[0m[0m
+      [31m-[0m[0m byte_length = 4 [90m-> null[0m[0m
+      [31m-[0m[0m dec         = "1819525667" [90m-> null[0m[0m
+      [31m-[0m[0m hex         = "6c73c223" [90m-> null[0m[0m
+      [31m-[0m[0m id          = "bHPCIw" [90m-> null[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 4 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m bucket_name    = "project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223" [90m-> null[0m[0m
+  [31m-[0m[0m dataset_id     = "homework_dataset" [90m-> null[0m[0m
+  [31m-[0m[0m vm_internal_ip = "10.186.0.2" [90m-> null[0m[0m
+  [31m-[0m[0m vm_name        = "homework-vm" [90m-> null[0m[0m
+[0m[1mgoogle_storage_bucket.homework_bucket: Destroying... [id=project-534688f2-c3a9-4bff-95a-hw-bucket-6c73c223][0m[0m
+[0m[1mgoogle_bigquery_dataset.homework_dataset: Destroying... [id=projects/project-534688f2-c3a9-4bff-95a/datasets/homework_dataset][0m[0m
+[0m[1mgoogle_compute_instance.homework_vm: Destroying... [id=projects/project-534688f2-c3a9-4bff-95a/zones/europe-central2-a/instances/homework-vm][0m[0m
+[0m[1mgoogle_bigquery_dataset.homework_dataset: Destruction complete after 1s[0m
+[0m[1mgoogle_storage_bucket.homework_bucket: Destruction complete after 1s[0m
+[0m[1mrandom_id.suffix: Destroying... [id=bHPCIw][0m[0m
+[0m[1mrandom_id.suffix: Destruction complete after 0s[0m
+[0m[1mgoogle_compute_instance.homework_vm: Still destroying... [id=projects/project-534688f2-c3a9-4bff-95a...urope-central2-a/instances/homework-vm, 10s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.homework_vm: Still destroying... [id=projects/project-534688f2-c3a9-4bff-95a...urope-central2-a/instances/homework-vm, 20s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.homework_vm: Still destroying... [id=projects/project-534688f2-c3a9-4bff-95a...urope-central2-a/instances/homework-vm, 30s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.homework_vm: Destruction complete after 31s[0m
+[0m[1m[32m
+Destroy complete! Resources: 4 destroyed.
+[0m
