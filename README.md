@@ -23,5 +23,7 @@ Init:
 Resources were destroyed:
 <img width="1256" height="1025" alt="image" src="https://github.com/user-attachments/assets/ff4ad4ce-53c1-4b53-a7ca-3ddb84b540cf" />
 
+Dockerhub personal account was created:
+<img width="1938" height="915" alt="image" src="https://github.com/user-attachments/assets/fa7436cd-ae2d-4ac8-97cf-1b40ab1084b6" />
 
 
